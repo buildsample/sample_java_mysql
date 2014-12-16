@@ -8,8 +8,13 @@ after_success:
    - mvn clean cobertura:cobertura
    - mvn test
    
+
 notifications:
-  email: false
+     email:
+         recipients:
+            - vidya@shippable.com
+         on_success: change
+         on_failure: always
 
 #cache: true
 archive: true
