@@ -7,7 +7,7 @@ jdk:
 after_success:
    - mvn clean cobertura:cobertura
    - mvn test
-build_image: shippable/minv2:beta
+#build_image: shippable/minv2:beta
    
 
 notifications:
