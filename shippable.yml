@@ -15,7 +15,10 @@ after_success:
 notifications:
   email: false
 
-
+after_success:
+- echo "success"
+after_failure:
+- echo "failed"
 
 #cache: true
 archive: true
