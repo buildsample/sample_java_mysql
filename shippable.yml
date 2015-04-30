@@ -4,7 +4,7 @@ jdk:
    - oraclejdk7
    - openjdk6
    - openjdk7
-#script: mvn --version
+script: mvn --version
 after_success:
    - mvn clean cobertura:cobertura
    - mvn test
